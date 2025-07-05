@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cyber Op Admin Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cyber Op Admin Dashboard</h1>
+    <form method="POST" enctype="multipart/form-data" action="/admin/upload">
+      <label for="token">Admin Token:</label>
+      <input type="password" name="token" required>
+      <br><br>
+      <input type="file" name="file" required>
+      <button type="submit">Upload PDF</button>
+    </form>
+  </div>
+</body>
+</html>
